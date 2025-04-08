@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    overflow: hidden;
+    position: relative;
+   
+}
+
+.logo img {
+    height: 50px; /* Adjust size as needed */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.menu {
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    width: 50%;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.navbar #myLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;  /* Ensure the nav items are horizontal by default */
+    gap: 20px;
+}
+
+.navbar a.icon {
+    display: none; /* Hidden by default */
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #aca7a4;
+    color: white;
+}
+
+/* Media Query for mobile devices */
+@media screen and (max-width: 768px) {
+    /* Show the hamburger icon only on mobile */
+    .navbar a.icon {
+        display: block;
+    }
+
+    /* Hide the nav links by default on mobile */
+    .navbar .nav-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Show the nav links when the menu is toggled */
+    .navbar #myLinks {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Display nav links vertically on mobile */
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.menu-item {
+    margin-bottom: 20px;
+  }
+  
+  #cart p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.buttonClearCart {
+    text-align: center;
+}
